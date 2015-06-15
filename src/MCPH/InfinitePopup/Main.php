@@ -27,6 +27,7 @@ class Main extends PluginBase
         //$tn = substr($this->pmsg,(strlen($this->pmsg)-1)); //Other way
         //$tc = substr($this->pmsg,0,(strlen($this->pmsg)-1));
        
+        $this->lobby = $this->getServer()->getLevelByName($cfg->get("world-name"));
         $this->pmsg = $cfg->get("popup-message");
         $this->pmc = 0;
        
