@@ -35,7 +35,7 @@ class Main extends PluginBase
        
         $this->pmsg = $tn.$tc;
        
-        foreach(Server::getInstance()->getOnlinePlayers() as $ppp){
+        foreach($this->getServer()->getOnlinePlayers() as $ppp){
            
             if($ppp->getLevel() == $this->lobby){
            
