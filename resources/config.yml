@@ -1,6 +1,10 @@
 ---
 # InfinitePopup by MinecrafterPH
-# Note: The space at the beginning and end of the message is needed.
+# Note: The space at the beginning and end of the message is needed. (except for world-name)
 
+# The name of the world where you want the popup to show up.
+world-name: "world"
+
+# The message you want to show.
 popup-message: " Text here! "
 ...
