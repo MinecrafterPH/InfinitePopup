@@ -15,7 +15,7 @@ class Main extends PluginBase
   public function onEnable(){
         $this->getLogger()->info("InfinitePopup has been enabled.");
         $cfg = $this->getConfig();
-        $this->getServer()->getScheduler()->scheduleRepeatingTask(new CallbackTask(array($this, "popup")),3); //Callbacktask still works lol
+        $this->getServer()->getScheduler()->scheduleRepeatingTask(new Task\PluginCallbackTask(array($this, "popup")),3); //Callbacktask still works lol
 
   }
   
