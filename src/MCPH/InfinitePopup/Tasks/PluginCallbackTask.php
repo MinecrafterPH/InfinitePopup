@@ -18,6 +18,7 @@
 */
 namespace MCPH\InfinitePopup\Tasks;
 use pocketmine\plugin\Plugin;
+use MCPH\InfinitePopup\Main;
 /**
  * Allows the creation of simple callbacks with extra data
  *
