@@ -16,6 +16,7 @@
  *
  *
 */
+/* This will be an alternative CallbackTask. */
 namespace MCPH\InfinitePopup\Tasks;
 use pocketmine\plugin\Plugin;
 use pocketmine\scheduler\PluginTask;
@@ -25,7 +26,7 @@ use MCPH\InfinitePopup\Main;
  * Allows the creation of simple callbacks with extra data
  *
  */
-class PluginCallbackTask extends PluginTask{
+class AltCallbackTask extends PluginTask{
 	/** @var callable */
 	protected $callable;
 	/** @var array */
