@@ -7,7 +7,7 @@ use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-use pocketmine\scheduler\CallbackTask;
+use MCPH\InfinitePopup\Tasks\PluginCallbackTask;
 
 class Main extends PluginBase
 {
