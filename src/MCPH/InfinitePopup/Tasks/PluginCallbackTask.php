@@ -17,7 +17,7 @@
  *
  *
 */
-namespace pocketmine\scheduler;
+namespace MCPH\InfinitePopup\Tasks;
 use pocketmine\scheduler\Task;
 
 use MCPH\InfinitePopup\Main;
