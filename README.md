@@ -1,2 +1,2 @@
 # InfinitePopup
-Adds infinite popups to your server.
+###### Adds infinite popups to your server.
