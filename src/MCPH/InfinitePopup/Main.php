@@ -38,7 +38,7 @@ class Main extends PluginBase
        
       foreach($this->getServer()->getOnlinePlayers() as $ppp){
          if($ppp->getLevel() == $this->lobby){
-            $ppp->sendPopup(str_repeat(TextFormat::AQUA . "=" . TextFormat::YELLOW . "-", 12) . "\n§e   " . substr($this->pmsg, 0, 25));
+            $ppp->sendPopup(str_repeat(TextFormat::AQUA . "=" . TextFormat::RED . "-", 12) . "\n" . TextFormat::YELLOW . "   " . substr($this->pmsg, 0, 25));
          }
        }
       $this->pmc++;
