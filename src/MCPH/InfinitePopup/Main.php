@@ -13,6 +13,7 @@ class Main extends PluginBase
 {
    
    public function onEnable(){
+      $this->getServer()->getPluginManager()->registerEvents($this, $this);
       $this->getLogger()->info("InfinitePopup has been enabled.");
       $cfg = $this->getConfig();
       $this->getServer()->getScheduler()->scheduleRepeatingTask(new Tasks\PluginCallbackTask(array($this, "popup")),3); //Callbacktask still works lol
@@ -37,7 +38,7 @@ class Main extends PluginBase
        
       foreach($this->getServer()->getOnlinePlayers() as $ppp){
          if($ppp->getLevel() == $this->lobby){
-            $ppp->sendPopup(str_repeat(TextFormat::AQUA . "=" . TextFormat::YELLOW . "-", 25) . "\n§e   " . substr($this->pmsg, 0, 25));
+            $ppp->sendPopup(str_repeat(TextFormat::AQUA . "=" . TextFormat::YELLOW . "-", 12) . "\n§e   " . substr($this->pmsg, 0, 25));
          }
        }
       $this->pmc++;
